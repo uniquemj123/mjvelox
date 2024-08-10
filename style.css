@@ -1,21 +1,23 @@
 body {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 .upper {
     background-color: darkgray;
+    /* padding-top: 20px; */
+}
+
+.logo {
+    height: 50px;
+    padding-left: 40px;
 }
 
 nav {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: auto;
-}
-
-.logo {
-    padding-left: 80px;
+    padding-top: 20px;
 }
 
 .active {
@@ -30,8 +32,7 @@ ul {
     display: flex;
     list-style: none;
 }
-
-ul :hover {
+.home :hover {
     color: blue;
 }
 
@@ -42,6 +43,10 @@ ul :hover {
     font-weight: bold;
     margin-right: 80px;
     font-size: 24px;
+}
+.toggle-menu{
+    padding-top: 20px;
+    display: none;
 }
 
 button {
@@ -118,7 +123,7 @@ hr {
 .footer {
     text-align: center;
     margin-top: 20px;
-    background-color: darkgrey;
+    background-color: rgb(243, 243, 235);
 }
 
 .port {
@@ -126,7 +131,8 @@ hr {
 }
 
 .footer-listing {
-    padding-left: 35%;
+    padding-left: 580PX;
+    font-size: 25PX;
 }
 
 .all {
@@ -136,6 +142,7 @@ hr {
 .footer-container {
     margin-right: 100px;
     margin-left: 100px;
+    /* height: auto; */
 }
 
 .footer-column1,
@@ -151,4 +158,95 @@ hr {
     padding-right: 0px;
     border: 2px;
     padding-top: 30px;
+}
+
+
+
+/* Use a media query to add a breakpoint at 800px: */
+@media screen and (max-width: 800px) {
+    nav{
+        justify-content: space-between;
+        padding-top: 20px;
+    }
+    .hero-section{
+        padding-top: 50px;
+    }
+    .nav-links {
+        display: none;
+    }
+    .toggle-menu{
+        display: flex;
+        height: 50px;
+        width: 120px;
+        padding-left: 20px;
+    }
+    .logo {
+        height: 34px;
+        padding-left: 50px;
+        width: 130px;
+        padding-top: 20px;
+    }
+    button {
+        background-color: rgb(19, 153, 243);
+        color: white;
+        border-radius: 30px;
+        border: none;
+        padding: 10px;
+        padding-right: 20px;
+        padding-left: 20px;
+        font-size: 20px;
+        margin-top: 40px;
+    }
+
+     .group{
+        width: 170px;
+        padding-left: 110px;
+     }
+    .active {
+        display: none;
+    }
+    .advert{
+        font-size: 50px;
+    
+    }
+    .services{
+        font-size: 30px;
+    }
+    .design-advert{
+        font-size: 20px;
+    }
+
+    /* .footer-container {
+        height: auto;
+
+    } */
+    .footer {
+        margin-top: 20px;
+        background-color: rgb(243, 243, 235);
+    }
+    .footer-listing {
+        padding-left: 70PX;
+        font-size: 20PX;
+    }
+    .footer-column1,
+    .footer-column2 {
+        gap: 10px;
+        margin-top: 30px;
+        
+    
+    }
+
+    .Neque {
+            padding-left: 0px;
+            border: 2px;
+            padding-top: 30px;
+            /* width: 30px;
+            height: 50px; */
+        }
+    .squares{
+        width: 180px;
+    }
+    .my-button{
+        font-size: 14px;
+    }
 }
